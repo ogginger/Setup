@@ -8,12 +8,11 @@ define([
 	return {
 		"Name":"Setup_SimpleSetup",
 		"Input": function() {
-			return true
+			return function() {
+				return true;
+			};
 		},
-		"Function": function( Input ) {
-			Setup( Input );
-			return Input;
-		},
+		"Function": Setup,
 		"ExpectedOutput": true
 	};
 });

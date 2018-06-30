@@ -8,7 +8,9 @@ define([
 ) {
   return function( Input ) {
 	if ( _.isFunction( Input ) ) {
-		Input = Input();
+		return Input();
+	} else {
+		return Input;
 	}
   };
 });
